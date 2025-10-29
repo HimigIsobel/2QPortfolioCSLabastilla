@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background: linear-gradient(to bottom, #2C0000, #4B0000, #300000);
+  color: #FCEFEF;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(to bottom, #5C0000, #2A0000);
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-bottom: 5px solid #8C1C13;
+  color: #FBEFEF;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+header img {
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #B8860B;
+}
+
+header h1 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  color: #FFD8B1;
+  text-shadow: 0 0 8px rgba(255, 218, 185, 0.5);
+}
+
+header h2 {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #FFECEC;
+  margin-top: 5px;
+}
+
+header p {
+  font-size: 1em;
+  color: #F7E6E6;
+  margin: 5px 0 15px 0;
+}
+
+nav {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #F5D7D7;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background-color: #8B0000;
+  color: #FADADD;
+  box-shadow: 0 0 8px rgba(255, 182, 193, 0.6);
+}
+
+nav a:visited {
+  color: #EABFBF;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #3A0000;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.7);
+  color: #FCEFEF;
+}
+
+main h1, main h2, main h3 {
+  color: #F6D7B0;
+  text-align: center;
+  margin-bottom: 18px;
+  text-shadow: 0 0 6px rgba(246, 215, 176, 0.4);
+}
+
+main p {
+  margin: 15px 0;
+  font-size: 1.05em;
+  text-align: justify;
+  color: #FFF8F8;
+}
+
+img {
+  float: right;
+  margin: 15px;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #8B0000;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+section ul {
+  list-style-type: circle;
+  margin-top: 10px;
+  padding-left: 40px;
+  color: #FCEFEF;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: 1em;
+  text-align: center;
+  border: 2px solid #8B0000;
+  background-color: #2E0000;
+  color: #FFF3F3;
+  overflow-x: auto;
+  display: block;
+}
+
+th, td {
+  border: 2px solid #5C0000;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+th {
+  background-color: #660000;
+  color: #FBD9B8;
+  text-shadow: 0 0 5px rgba(255, 200, 150, 0.4);
+}
+
+tr:nth-child(even) {
+  background-color: #3B0000;
+}
+
+tr:nth-child(odd) {
+  background-color: #4B0000;
+}
+
+a {
+  color: #EBA9A9;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #FFCCCC;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #F0BDBD;
+}
+
+footer {
+  background: linear-gradient(to top, #2A0000, #4B0000);
+  text-align: center;
+  padding: 18px;
+  border-top: 5px solid #8C1C13;
+  font-size: 0.9em;
+  color: #FCECEC;
+  letter-spacing: 0.5px;
+  margin-top: 40px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 900px) {
+  header img {
+    width: 60px;
+  }
+
+  main {
+    width: 95%;
+    padding: 25px;
+  }
+
+  table {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 25px 10px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #3A0000;
+    border: 1px solid #660000;
+  }
+
+  img {
+    float: none;
+    display: block;
+    margin: 15px auto;
+    width: 90%;
+  }
+
+  main {
+    width: 90%;
+    padding: 20px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  main {
+    width: 95%;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
